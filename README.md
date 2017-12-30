@@ -1,9 +1,8 @@
 # local_path_planning
 ## COMPILE:
+mkdir build && cd build
+cmake ..
 make
 
 ## RUN
-./ReadDemo
-
-## CLEAN:
-make clean
+./build/local_path_planning test/test_input.txt

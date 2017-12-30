@@ -75,8 +75,12 @@ bool ReadPath(Path* path, std::string filename) {
 
 Path path;
 
-int main() {
-  if (ReadPath(&path, "test_input.txt")) {
+int main(int argc, char ** argv) {
+  if (argc != 2) {
+    std::cerr << "Usage: " << argv[0] << " \"input file name\"" << std::endl;
+    return 1;
+  }
+  if (ReadPath(&path, argv[1])) {
     for (auto state : path) {
       std::cout << state.toString() << std::endl;
     }
