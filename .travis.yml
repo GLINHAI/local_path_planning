@@ -1,3 +1,5 @@
 language: c++
+before_install:
+  sudo apt-get install libeigen3-dev
 script:
   mkdir build && cd build && cmake .. && make
