@@ -1,12 +1,9 @@
 # local_path_planning
-##COMPILE:
+## COMPILE:
 make
 
-##RUN
+## RUN
 ./ReadDemo
 
-##CLEAN:
+## CLEAN:
 make clean
-
-##HELP:
-contact me
