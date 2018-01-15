@@ -132,6 +132,13 @@ target_link_libraries(path_planning ${catkin_LIBRARIES})
 add_dependencies(path_planning path_following_generate_messages_cpp)
 
 
+add_executable(send_goal src/send_goal.cpp)
+target_link_libraries(send_goal ${catkin_LIBRARIES})
+
+add_executable(send_position src/send_position.cpp)
+target_link_libraries(send_position ${catkin_LIBRARIES})
+
+
 ## Declare a C++ library
 # add_library(${PROJECT_NAME}
 #   src/${PROJECT_NAME}/path_planning.cpp
